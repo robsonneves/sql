@@ -1,0 +1,9 @@
+BEGIN
+
+	FOR i IN 1..10 LOOP
+		INSERT INTO teste(id, nome, status) VALUES (i, 'ok', 0);
+	END LOOP;
+	
+	COMMIT;
+
+END;
